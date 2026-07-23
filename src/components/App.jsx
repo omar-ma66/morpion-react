@@ -1,13 +1,29 @@
-import Click from "./Click/Click"
-import Time from "./Time/Time"
-import Welcome from "./Welcome/Welcome"
 
-function App() {
-  return (
-    <section> 
-    <Welcome  firstname="omar" lastname="malki" />
-    </section>
-  )
+function Square() {
+  return  <button className="square">1</button>
 }
 
-export default App
+
+export default  function Board() {
+  return (
+    <> 
+    <div className="board-row"> 
+        <Square />
+        <Square />
+        <Square />     
+    </div>
+    <div className="board-row"> 
+         <Square />
+        <Square />
+        <Square />     
+    </div>
+    <div className="board-row">
+        <Square />
+        <Square />
+        <Square />     
+    </div>
+  </>
+  );
+  
+}
+
